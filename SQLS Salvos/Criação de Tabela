@@ -1,0 +1,5 @@
+create table meus_contatos( sobrenome VARCHAR(30),
+primeiro_nome VARCHAR(20),
+email VARCHAR(20);
+aniversario DATE,
+profissao VARCHAR(50),local VARCHAR(50),estado civil VARCHAR(20),interesses VARCHAR(100),procura VARCHAR(100));

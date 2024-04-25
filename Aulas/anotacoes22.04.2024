@@ -1,0 +1,25 @@
+## Objetivos da Normalização
+
+- A finalidade das regras de normalização é evitar anomalias de atualização no banco de dados
+- Evitar a repetição desnecessária de dados( redundância )
+- Evitar incossistências e reduzir o esforço para a atualização dos dados
+- Evitar a perda de informações associadas a um dado registro
+
+---
+
+## 1 FN( 1° Forma Normal )
+
+Os atributos devem ser atômicos ( indivisíveis ), não podem conter tabelas aninhadas
+
+Atributos compostos ou multivalorados devem ser representados por novas linhas ou novas tabelas
+
+**Uma tabela se encontra na 1FN se todas as suas
+colunas são elementares – Atributos atômicos**
+
+**Uma tabela se encontra na 1FN quando:
+•** Somente possui valores atômicos;
+• Não há grupo de atributos repetidos(há apenas um dado por
+coluna nas linhas);
+• Existe uma chave primária;
+• Relação não possui atributos multivalorados ou relações
+aninhadas

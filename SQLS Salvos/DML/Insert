@@ -1,0 +1,7 @@
+insert into aluno(nome, matricula)
+values(‘Jefferson’, 20211010) ;
+
+insert into aluno(1, ‘Jefferson’, 20211010) ;
+
+insert into aluno values (1, ‘Jefferson’, 20211010) ,
+(2, ‘Maria’, 20227040);

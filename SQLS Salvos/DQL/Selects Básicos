@@ -1,0 +1,35 @@
+Select * From pacientes ;
+
+Select * from pacientes where doenca ='Cancer' or idade <10;
+
+Select distinct especialidade from Medicos -SERVE PARA ELIMINAR DUPLICIDADES
+EX.: Se nas especialidade eu tenho Ortopedista 2x, só vai trazer 1x
+
+FUNÇÃO PARA CÁLCULOS
+
+select capacidade/5 as grupo5 from Ambulatorios 
+
+select CPF, salario -(salario*0.1) as liquido from Funcionarios
+
+FUNÇÃO COUNT
+
+select count( * ) as TotalOrtopedistas from Medicos where especialidade ='ortopedia'
+
+FUNÇÃO SUM
+
+select sum( capacidade ) as TotalAndar1 where andar = 1;
+
+FUNÇÃO AVG
+
+select avg(idade) as MediPacFpolis from Pacientes where cidade='Florianopolis'
+
+FUNÇÃO MIN/MAX
+
+select min(salario) as minimo, max(salario) as maximo from Funcionarios where idade>40
+
+CLÁUSULA WHERE
+
+... where [NOT] LIKE bla bla
+... where IS [NOT] NULL bla bla
+... where [NOT] BETWEEN valor1 AND valor2
+... where [NOT] IN

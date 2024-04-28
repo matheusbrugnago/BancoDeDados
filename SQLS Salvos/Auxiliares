@@ -1,0 +1,10 @@
+show database; -> Mostra os Bancos de Dados existentes
+
+create database nome; -> Criação do banco
+
+use nom; -> Usa o Banco
+
+desc meus_contatos; -> Descrição da estrutura da tabela
+
+-- bla bla -> Comentário
+

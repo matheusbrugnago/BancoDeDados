@@ -13,13 +13,17 @@ Os atributos devem ser atômicos ( indivisíveis ), não podem conter tabelas an
 
 Atributos compostos ou multivalorados devem ser representados por novas linhas ou novas tabelas
 
-**Uma tabela se encontra na 1FN se todas as suas
-colunas são elementares – Atributos atômicos**
-
-**Uma tabela se encontra na 1FN quando:
-•** Somente possui valores atômicos;
+• Somente possui valores atômicos;
 • Não há grupo de atributos repetidos(há apenas um dado por
 coluna nas linhas);
 • Existe uma chave primária;
 • Relação não possui atributos multivalorados ou relações
 aninhadas
+
+## 2 FN( 2° Forma Normal )
+
+Está na 1° Forma Normal
+Todos os atributos não-chave são funcionalmente dependente de "todas as partes" da chave primária;
+Não existiem dependências parciais
+Caso contrário, deve gerar uma nova tabela com os dados
+

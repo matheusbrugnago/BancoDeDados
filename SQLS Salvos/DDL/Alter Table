@@ -1,3 +1,6 @@
-ALTER TABLE Professores ADD Last Name VARCHAR(100)
+ALTER TABLE Professores ADD Last Name VARCHAR(100):
+inclusão de uma nova coluna na estrutura da tabela.
+Na coluna correspondente a esse campo já existente será preenchido o valor NULL (Nulo). 
 
-ALTER TABLE Professores MODIFY Sobrenome VARCHAR(50) 
+ALTER TABLE Professores MODIFY Sobrenome VARCHAR(50) :
+Permite a alteração na característica da coluna especificada.

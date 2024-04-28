@@ -1,0 +1,23 @@
+UNIÃO DE TABELA:
+
+select CPF, Nome from Medicos
+union
+select CPF, Nome from Pacientes
+
+CONCAT:
+
+select concat( 'Médico . . .',nome) PESSOA, CPF from Medicos
+union
+select concat('Paciente: ', nome ), CPF from Pacientes
+
+DDL a partir de uma consulta(SQL):
+
+create table Tabela_Auxiliar as ( select * from medicos );
+select * from Tabela_Auxiliar;
+
+SubConsultas ou Consultas Aninhadas:
+
+select nome from medicos where codm in( select Codm_FK from Consultas where dt_consulta='2006-06-13')
+
+*Testam a relação de pertinência ou não pertinência elemento-conjunto
+

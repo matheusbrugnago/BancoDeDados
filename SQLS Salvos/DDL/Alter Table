@@ -1,0 +1,3 @@
+ALTER TABLE Professores ADD Last Name VARCHAR(100)
+
+ALTER TABLE Professores MODIFY Sobrenome VARCHAR(50) 

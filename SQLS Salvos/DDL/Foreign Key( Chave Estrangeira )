@@ -1,0 +1,2 @@
+...,FOREIGN KEY(codigo_func) references  Funcionario(codigo_func),
+    O campo é cadastrado como FK  + reference + Campo vindo do campo de outra tabela

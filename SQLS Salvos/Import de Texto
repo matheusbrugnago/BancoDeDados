@@ -1,0 +1,15 @@
+1-Deve ser feito o arquivo.txt baseado em " ; " a qual é de extrema importância manter evidente o que é coluna da tabela:
+Matheus;   Suporte;
+João;      Programador;
+Jinny;     Gerente;
+
+2-Deve ser criado no banco de dados uma tabela que possua esses campos no txt:
+
+create table Profissao(nome varchar(50), profissao varchar(60));
+
+3-Deve colocar esse arquivo txt no path( caminho ) do database;
+4-Deve executar esse comando para verificar onde ele está e também para puxar ele para o banco:
+
+load data infile 'save_as.txt' into table Profissao fields terminated by ';';
+
+5-Recomendado fazer um select*from para verificar;

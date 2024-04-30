@@ -9,3 +9,11 @@ CREATE TABLE Dependente(
   Nome varchar(100) NOT NULL,
   Cod_Func integer,
   FOREIGN KEY(Cod_Func) REFERENCES Funcionario(Cod)
+
+SELECT FUNC.NOME, DEP.NOME FROM Funcionario FUNC, dependente DEP where func.cod=dep.cod_func;
+
+IMPORTAR TEXTO EM SGBD
+
+create table Profissao(nome varchar(50), profissao varchar(60));
+load data infile 'save_as.txt' into table Profissao fields terminated by ';';
+select*from Profissao;

@@ -1,0 +1,11 @@
+CREATE TABLE Funcionario(
+    Cod integer primary key auto_increment,
+    Nome varchar(100) NOT NULL,
+    Especialidade varchar(15)
+);
+
+CREATE TABLE Dependente(
+  Cod integer primary key auto_increment,
+  Nome varchar(100) NOT NULL,
+  Cod_Func integer,
+  FOREIGN KEY(Cod_Func) REFERENCES Funcionario(Cod)

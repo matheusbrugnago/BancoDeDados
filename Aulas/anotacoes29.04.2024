@@ -14,6 +14,7 @@ SELECT FUNC.NOME, DEP.NOME FROM Funcionario FUNC, dependente DEP where func.cod=
 
 IMPORTAR TEXTO EM SGBD
 
-create table Profissao(nome varchar(50), profissao varchar(60));
-load data infile 'save_as.txt' into table Profissao fields terminated by ';';
-select*from Profissao;
+1-Deve criar um arquivo de texto
+2-create table Profissao(nome varchar(50), profissao varchar(60));
+3-Colocar o arquivo texto no mesmo path do banco: load data infile 'save_as.txt' into table Profissao fields terminated by ';';
+4-select*from Profissao;

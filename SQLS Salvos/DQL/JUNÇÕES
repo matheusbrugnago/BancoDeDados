@@ -1,0 +1,15 @@
+CARTESIANO:
+select func.nome nome_func, dep.nome nome_dep
+from funcionario func, dependente dep
+where func.cod = dep.cod_func;
+
+INNER JOIN:
+select func.nome nome_func, dep.nome nome_dep
+from funcionario func
+inner join dependente dep on (func.cod = dep.cod_func);
+
+RIGHT JOIN:
+select func.nome nome_func,dep.nome nome_dep from funcionario func right outer join dependente dep on (func.cod= dep.cod);
+
+LEFT JOIN:
+select func.nome nome_func,dep.nome nome_dep from funcionario func left outer join dependente dep on (func.cod= dep.cod);
